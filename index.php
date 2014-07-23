@@ -14,30 +14,6 @@
     <div class="main clearfix">
         <!--main_column-->
         <div class="main_column">
-            <section class="news_container">
-                <h2 class="heading_point h_main">ニュース<span class="sub_heading">news</span></h2>
-                <div class="news_detail">
-                    <div>
-                        <dl>
-                            <dt class="daily">2014年06月25日</dt>
-                            <dd><a href=""></a>エンパワーメント株式会社Webサイトをオープンしました。</dd>
-                        </dl>
-                    </div>
-                    <div>
-                        <dl>
-                            <dt class="daily">2014年06月25日</dt>
-                            <dd><a href=""></a>エンパワーメント株式会社Webサイトをオープンしました。</dd>
-                        </dl>
-                    </div>
-                    <div>
-                        <dl>
-                            <dt class="daily">2014年06月25日</dt>
-                            <dd><a href=""></a>エンパワーメント株式会社Webサイトをオープンしました。</dd>
-                        </dl>
-                    </div>
-                    <p class="read_more"><a href="">ニュース一覧を見る</a></p>
-                </div>
-            </section>
             <section class="works_container">
                 <ul class="caption_area clearfix">
                     <li class="caption_box">
@@ -60,16 +36,23 @@
                     </li>
                 </ul>
             </section>
-            <section class="conversion_container clearfix">
-                <h3 class="conversion_head t_hide">お問い合わせはこちら。</h3>
-                <div class="conversion_detail">
-                    <p>ご質問やご相談、お見積り依頼まで承ります。</p>
-                    <p>どうぞお気軽にお問い合わせください。</p>
-                </div>
-                <div class="btn">
-                    <button class="btn_area"><a href="" ></a>お問い合わせ</button>
+            <section class="news_container">
+                <h2 class="heading_point h_main">ニュース<span class="sub_heading">news</span></h2>
+                <div class="news_detail">
+                    <?php
+                      query_posts(array('post_type' => 'post', 'paged' => get_query_var('paged'), 'posts_per_page' => 5));
+                      if (have_posts()) :
+                        while (have_posts()) :
+                            the_post();
+                            get_template_part('content-archive');
+                        endwhile;
+                      endif;
+                      wp_reset_query();
+                    ?>
+                    <p class="read_more"><a href="<?php echo get_permalink(get_page_by_path('company/news')); ?>">ニュース一覧を見る</a></p>
                 </div>
             </section>
+        <?php get_template_part('page_get_contact'); ?>
         </div>
         <!--main_column-->
     <?php get_sidebar(); ?>

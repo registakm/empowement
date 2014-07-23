@@ -18,7 +18,7 @@
 .heading_point.h_sub { border-bottom: solid 2px #e6e6e6; }
 .heading_point .sub_heading { font-size: 63%; color: #b2b2b2; display: inline-block; text-align: right; position: absolute; right: 0; top: 35%; }
 
-.read_more { color: #0059b3; margin: 20px; text-align: right; }
+.read_more { color: #0059b3; margin: 20px 0px 20px 20px; text-align: right; }
 .read_more:before { content: ''; background: url("images/f_arrow.png") no-repeat; background-position: left center; padding-right: 10px; }
 
 hr.sectioner { background-color: #0059b3; border-top: solid 4px #0059b3; }
@@ -138,7 +138,7 @@ footer .f_copyright .copyright { color: #666666; font-size: 75%; text-align: cen
 .news_container .news_detail dt { position: absolute; left: 0; }
 .news_container .news_detail dd { margin-left: 200px; }
 
-.works_container { margin: 20px 0px; padding: 30px 0px; border-bottom: solid 1px #f7f7f7; }
+.works_container { margin: 20px 0px; padding: 30px 0px; }
 .works_container .caption_area .caption_box { position: relative; overflow: hidden; width: 210px; float: left; margin: 10px 10px; }
 .works_container .caption_area .caption_box:first-child { margin: 10px 15px 10px 0px; }
 .works_container .caption_area .caption_box:last-child { margin: 10px 0px 10px 15px; }

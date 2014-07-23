@@ -9,7 +9,7 @@
         <ul>
         <?php 
             wp_list_pages(array('include' => get_page_by_path('company')-> ID, 'title_li' => 0));
-            wp_list_pages(array('include' => 63, 'title_li' => 0)); 
+            wp_list_pages(array('include' => get_page_by_path('company/news')-> ID, 'title_li' => 0)); 
         ?>
         </ul>
     </section>
