@@ -1,0 +1,11 @@
+node_modules
+.grunt
+
+.idea
+.project
+
+logs
+*.log
+*.DS_Store
+*.pid
+*.seed

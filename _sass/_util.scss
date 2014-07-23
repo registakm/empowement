@@ -1,0 +1,233 @@
+@import "mixins";
+@import "font";
+@import "compass";
+/*
+ * placeholeder
+ */
+
+//content cente
+%m-center {
+  margin: 0 auto;
+}
+
+%t-center {
+  text-align: center;
+}
+
+/*
+ * util class
+ */
+
+.f_shingo {
+  font-family: $font-family-shingo;
+}
+
+.t_hide {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.article_t {
+  font-size: $px44;
+  font-weight: bold;
+  color: $tx-blue;
+}
+
+.article_sub_t {
+  font-family: $font-family-shingo;
+  font-size: $px22;
+  color: $tx-blue;
+}
+
+.btn {
+  width: 200px;
+  height: 60px;
+  float: right;
+  input[type=submit], .btn_area {
+    background-image: url('images/sprites-icon.png');
+    background-repeat: no-repeat;
+    background-position: 0 -31px;
+    font-size: $px16;
+    color: #fff;
+    width: 200px;
+    height: 60px;
+    border-style: none;
+    padding-right: 10px;
+    a {
+      display: block;
+      width: 200px;
+      padding: 17px 0px;
+    }
+  }
+  .ajax-loader {
+    position: relative;
+    right: 30px;
+    top: -40px;
+  }
+}
+
+.heading_point {
+  font-size: $px20;
+  color: $tx-blue;
+  background: url("images/heading_point.png") no-repeat left center;
+  padding: 10px 40px;
+  position: relative;
+  &.h_main{
+    border-bottom: solid 2px $bd-ligth-blue;
+  }
+  &.h_sub{
+    border-bottom: solid 2px $bd-grey;
+  }
+  .sub_heading {
+    font-size: $px10;
+    color: $tx-grey;
+    display: inline-block;
+    text-align: right;
+    position: absolute;
+    right: 0;
+    top: 35%;
+  }
+}
+
+.read_more {
+  &:before {
+    content: '';
+    background: url("images/f_arrow.png") no-repeat;
+    background-position: left center;
+    padding-right: 10px;
+  }
+  color: $tx-blue;
+  margin: 20px;
+  text-align: right;
+}
+
+hr.sectioner {
+  background-color: $bd-blue;
+  border-top: solid 4px $bd-blue;
+}
+
+hr.sectioner_lb {
+  background-color: $bd-ligth-blue;
+  border-top: solid 4px $bd-ligth-blue;
+}
+.step_txt  {
+  font-size: $px14;
+  color: $bd-ligth-blue;
+}
+.mark_head {
+  color: $tx-blue;
+  background-color: $tx-bg-yellow;
+  border-radius: 10px;
+}
+.bred_comb {
+  border-top: solid 2px $bd-grey;
+  padding: 20px 0;
+  .ajust_width {
+    width: 960px;
+    margin: 0 auto;
+    .bred_comb_inner {
+      color: #333333;
+      font-size: $px12;
+      float: left;
+      margin-top: 3px;
+    }
+    .scroll_top {
+      background-image: url('images/sprites-icon.png');
+      background-repeat: no-repeat;
+      background-position: -240px -31px;
+      width: 22px;
+      height: 22px;
+      float: right;
+      #scroll {
+        display: block;
+        width: 22px;
+        height: 22px;
+      }
+    }
+  }
+}
+
+.f_arrow {
+  font-size: $px12;
+  background: url("images/f_arrow.png") no-repeat;
+  background-position: left center;
+  padding: 10px 0px 10px 15px;
+  &.heading {
+    color: $tx-blue;
+    font-weight: bold;
+  }
+  &.content_inner {
+    font-weight: normal;
+    color: $tx-grey;
+  }
+}
+.fee_container {
+  border-bottom: solid 1px $bd-light-grey;
+  padding: 20px 0px 30px 0px;
+  margin-bottom: 30px;
+  .fee_content {
+    background-image: url('images/sprites-h.png');
+    background-repeat: no-repeat;
+    background-position: -228px -81px;
+    width: 204px;
+    height: 19px;
+  }
+}
+.sentence_box {
+  font-size: $px12;
+  margin-top: 20px;
+  line-height: 1.4;
+}
+.table_inner {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: $line-height-computed;
+  color: #4c4c45;
+  font-size: $px12;
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        padding: 5px;
+        line-height: $line-height-base;
+        vertical-align: top;
+        border-top: 1px solid $table-border-color;
+        text-align: center;
+      }
+      > th:first-child, td:first-child {
+        text-align: left;
+        background-color: #fff !important;
+      }
+      > th:nth-child(even) {
+        background-color: #e5e5e5;
+      }
+      > th:nth-child(odd) {
+        background-color: #f7f7f7;
+      }
+    }
+    &:last-child {
+      border-bottom: 2px solid $table-border-color;
+    }
+  }
+  > thead > tr > th {
+    vertical-align: bottom;
+    border-bottom: 2px solid $table-border-color;
+  }
+  > caption + thead,
+  > colgroup + thead,
+  > thead:first-child {
+    > tr:first-child {
+      > th,
+      > td {
+        border-top: 0;
+        padding: 5px;
+      }
+    }
+  }
+  > tbody + tbody {
+    border-top: 2px solid $table-border-color;
+  }
+}
