@@ -30,6 +30,10 @@
                     get_template_part('page_about_price');
                 }
             ?>
+            <?php if(is_page(array('feature','howto'))) {
+                    get_template_part('page_document_download');
+                }
+            ?>
             </section>
         <?php
             if(is_page(array('feature','howto'))) {

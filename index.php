@@ -3,10 +3,10 @@
 <div class="container">
     <!-- first view -->
     <ul class="slider">
-        <li><a href=""><img src="<?php bloginfo('template_url'); ?>/images/fw_00.png" alt=""/></a></li>
-        <li><a href=""><img src="<?php bloginfo('template_url'); ?>/images/fw_01.png" alt=""/></a></li>
-        <li><a href=""><img src="<?php bloginfo('template_url'); ?>/images/fw_02.png" alt=""/></a></li>
-        <li><a href=""><img src="<?php bloginfo('template_url'); ?>/images/fw_03.png" alt=""/></a></li>
+        <li><a href=""><img src="<?php bloginfo('template_url'); ?>/images/tp_visual_01.png" alt=""/></a></li>
+        <li><a href=""><img src="<?php bloginfo('template_url'); ?>/images/tp_visual_02.png" alt=""/></a></li>
+        <li><a href=""><img src="<?php bloginfo('template_url'); ?>/images/tp_visual_03.png" alt=""/></a></li>
+        <li><a href=""><img src="<?php bloginfo('template_url'); ?>/images/tp_visual_04.png" alt=""/></a></li>
     </ul>
     <!-- first view -->
     <hr class="sectioner">
@@ -40,7 +40,11 @@
                 <h2 class="heading_point h_main">ニュース<span class="sub_heading">news</span></h2>
                 <div class="news_detail">
                     <?php
-                      query_posts(array('post_type' => 'post', 'paged' => get_query_var('paged'), 'posts_per_page' => 5));
+                      query_posts(array(
+                        'post_type' => 'post',
+                        'paged' => get_query_var('paged'),
+                        'posts_per_page' => 5)
+                      );
                       if (have_posts()) :
                         while (have_posts()) :
                             the_post();
@@ -52,6 +56,7 @@
                     <p class="read_more"><a href="<?php echo get_permalink(get_page_by_path('company/news')); ?>">ニュース一覧を見る</a></p>
                 </div>
             </section>
+        <?php get_template_part('page_document_download');?>
         <?php get_template_part('page_get_contact'); ?>
         </div>
         <!--main_column-->

@@ -83,7 +83,8 @@ function get_page_ancestor() {
   // };
 }
 
-// カテゴリ情報を取得する。
+/*  get category information
+/* ------------------------------------ */
 function apt_category_info($tax='category') {
   global $post;
   $cat = get_the_terms($post->ID, $tax);
@@ -120,5 +121,42 @@ function set_breadcrumb() {
       }
   the_title();
   }
+}
+
+/*  custom post type
+/* ------------------------------------ */
+add_action('init', 'register_post_type_and_taxonomy' );
+function register_post_type_and_taxonomy () {
+  register_post_type(
+    'product',
+    array(
+      'labels' => array(
+        'name' => '製品情報',
+        'add_new_item' => '製品情報の追加',
+        'edit_item' => '製品情報の編集'
+        ),
+      'public' => true,
+      'supports' => array(
+      'title',
+      'editor',
+      'excerpt',
+      'custom-fields',
+      'thumbnail',
+      ),
+    )
+  );
+  register_taxonomy(
+    'product_name',
+    'product',
+    array(
+      'labls' => array(
+        'name' => '商品名',
+        'add_new_item' => '商品名を追加',
+        'edit_item' => '商品名の編集',
+      ),
+      'hierarchical' => true,
+      'show_admin_column' => true,
+    )
+  );
 }
 ?>

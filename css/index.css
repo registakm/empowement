@@ -42,6 +42,14 @@ hr.sectioner_lb { background-color: #00a0e9; border-top: solid 4px #00a0e9; }
 .fee_container { border-bottom: solid 1px #f7f7f7; padding: 20px 0px 30px 0px; margin-bottom: 30px; }
 .fee_container .fee_content { background-image: url("images/sprites-h.png"); background-repeat: no-repeat; background-position: -228px -81px; width: 204px; height: 19px; }
 
+.download_container { border-bottom: solid 1px #f7f7f7; padding: 20px 0px 30px 0px; margin-bottom: 30px; }
+.download_container .download_content_d { background-image: url("images/sprites-h.png"); background-repeat: no-repeat; background-position: 0 -61px; width: 263px; height: 20px; margin-bottom: 30px; }
+.download_container .d_title { font-family: "Shin Go Regular"; font-size: 75%; color: #4c4c45; margin: 20px 0; }
+.download_container .dl_link { font-size: 88%; color: #002a80; font-weight: bold; padding: 10px 0px 10px 15px; background: url("images/f_arrow.png") no-repeat; background-position: left center; }
+.download_container .d_box { float: left; margin: 20px 35px 0px 0px; }
+.download_container section { margin: 10px 0px 0px 5px; }
+.download_container .list { color: #002a80; margin-left: 20px; }
+
 .sentence_box { font-size: 75%; margin-top: 20px; line-height: 1.4; }
 
 .table_inner { width: 100%; max-width: 100%; margin-bottom: 20px; color: #4c4c45; font-size: 75%; }
@@ -119,9 +127,9 @@ footer .f_copyright .copyright { color: #666666; font-size: 75%; text-align: cen
 .form_area .form_area_inner .form_detail_inner .wpcf7-not-valid-tip { display: none; }
 .form_area .form_area_inner .form_detail_inner .wpcf7-not-valid { background-color: #fff2f2; border: solid 2px #e57373; }
 .form_area .form_area_inner input[type=text] { border: solid 1px #ccc; width: 250px; height: 18px; }
-.form_area .form_area_inner input[type=text]:focus { outline: none; border-color: #00a0e9; -webkit-box-shadow: 0 0 5px #00a0e9; box-shadow: 0 0 5px #00a0e9; }
+.form_area .form_area_inner input[type=text]:focus { outline: none; border-color: #00a0e9; box-shadow: 0 0 5px #00a0e9; }
 .form_area .form_area_inner textarea { font-size: 75%; resize: none; border: solid 1px #ccc; width: 400px; height: 165px; }
-.form_area .form_area_inner textarea:focus { outline: none; border-color: #00a0e9; -webkit-box-shadow: 0 0 5px #00a0e9; box-shadow: 0 0 5px #00a0e9; }
+.form_area .form_area_inner textarea:focus { outline: none; border-color: #00a0e9; box-shadow: 0 0 5px #00a0e9; }
 .form_area .form_area_inner .form_check_box .checkbox { position: relative; display: inline-block; margin-right: 30px; }
 .form_area .form_area_inner .form_check_box .checkbox input[type=checkbox] { position: absolute; display: block; top: 0; left: 0; width: 100%; height: 100%; z-index: 10; -webkit-appearance: none; }
 .form_area .form_area_inner .form_check_box .checkbox input[type=checkbox]:checked + .wpcf7-list-item-label:before { background-image: url("images/sprites-icon.png"); background-repeat: no-repeat; background-position: -200px -31px; width: 20px; height: 24px; }
@@ -184,8 +192,5 @@ footer .f_copyright .copyright { color: #666666; font-size: 75%; text-align: cen
 .contact_container .form_title { font-family: "Shin Go Regular"; font-size: 75%; color: #4c4c45; margin: 20px 0; }
 .contact_container .contact_detail_1 { border-bottom: solid 1px #f7f7f7; padding: 20px 0px 30px 0px; margin-bottom: 30px; }
 .contact_container .contact_detail_1 .contact_content_m { background-image: url("images/sprites-h.png"); background-repeat: no-repeat; background-position: 0 -81px; width: 228px; height: 19px; margin-bottom: 30px; }
-.contact_container .contact_detail_2 { border-bottom: solid 1px #f7f7f7; padding: 20px 0px 30px 0px; margin-bottom: 30px; }
-.contact_container .contact_detail_2 .contact_content_d { background-image: url("images/sprites-h.png"); background-repeat: no-repeat; background-position: 0 -61px; width: 263px; height: 20px; margin-bottom: 30px; }
-.contact_container .contact_detail_2 .dl_link { font-size: 88%; color: #002a80; font-weight: bold; padding: 10px 0px 10px 15px; background: url("images/f_arrow.png") no-repeat; background-position: left center; }
 .contact_container .contact_detail_3 { border-bottom: solid 1px #f7f7f7; padding: 20px 0px 30px 0px; margin-bottom: 30px; }
 .contact_container .contact_detail_3 .contact_content_o { background-image: url("images/sprites-h.png"); background-repeat: no-repeat; background-position: 0 -100px; width: 204px; height: 19px; margin-bottom: 30px; }
