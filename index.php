@@ -17,22 +17,28 @@
             <section class="works_container">
                 <ul class="caption_area clearfix">
                     <li class="caption_box">
+                        <a href="<?php echo get_permalink(get_page_by_path('feature')); ?>">
                         <img src="<?php bloginfo('template_url'); ?>/images/col_feature.png">
                         <div class="caption">
                             <p>当社エンパワーメントの３つの特徴をご紹介します</p>
                         </div>
+                        </a>
                     </li>
                     <li class="caption_box">
+                        <a href="<?php echo get_permalink(get_page_by_path('howto')); ?>">
                         <img src="<?php bloginfo('template_url'); ?>/images/col_howto.png">
                         <div class="caption">
                             <p>当社エンパワーメントの使い方をご紹介します</p>
                         </div>
+                        </a>
                     </li>
                     <li class="caption_box">
+                        <a href="<?php echo get_permalink(get_page_by_path('service')); ?>">
                         <img src="<?php bloginfo('template_url'); ?>/images/col_service.png">
                         <div class="caption">
                              <p>当社エンパワーメントの分析サービス一覧です</p>
                         </div>
+                        </a>
                     </li>
                 </ul>
             </section>
@@ -42,6 +48,7 @@
                     <?php
                       query_posts(array(
                         'post_type' => 'post',
+                        'category_name' => 'news',
                         'paged' => get_query_var('paged'),
                         'posts_per_page' => 5)
                       );

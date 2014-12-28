@@ -5,6 +5,6 @@
         <p>どうぞお気軽にお問い合わせください。</p>
     </div>
     <div class="btn">
-        <button class="btn_area"><a href="" >お問い合わせ</a></button>
+        <button class="btn_area"><a href="<?php echo get_permalink(get_page_by_path('contact')); ?>" >お問い合わせ</a></button>
     </div>
 </section>

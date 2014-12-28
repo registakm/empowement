@@ -178,6 +178,11 @@ hr.sectioner_lb {
   border-bottom: solid 1px $bd-light-grey;
   padding: 20px 0px 30px 0px;
   margin-bottom: 30px;
+}
+.download_container {
+  border-bottom: solid 1px $bd-light-grey;
+  padding: 20px 0px 30px 0px;
+  margin-bottom: 30px;
   .download_content_d {
     background-image: url('images/sprites-h.png');
     background-repeat: no-repeat;
@@ -202,7 +207,7 @@ hr.sectioner_lb {
   }
   .d_box {
     float: left;
-    margin: 20px 35px 0px 0px;
+    margin: 20px 34px 0px 0px;
   }
   section {
     margin: 10px 0px 0px 5px;

@@ -8,8 +8,8 @@
     <section class="service_side">
         <ul>
         <?php 
-            wp_list_pages(array('include' => get_page_by_path('company')-> ID, 'title_li' => 0));
-            wp_list_pages(array('include' => get_page_by_path('company/news')-> ID, 'title_li' => 0));
+            wp_list_pages(array('include' => get_page_by_path('contact')-> ID, 'title_li' => 0));
+            wp_list_pages(array('include' => get_page_by_path('contact/question')-> ID, 'title_li' => 0));
         ?>
         </ul>
     </section>

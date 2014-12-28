@@ -22,7 +22,12 @@
                 <article class="news_page">
                     <div class="new_content">
                     <?php
-                      query_posts(array('post_type' => 'post', 'paged' => get_query_var('paged')));
+                      query_posts(array(
+                        'post_type' => 'post',
+                        'category_name' => 'news',
+                        'paged' => get_query_var('paged')
+                        )
+                      );
                       if (have_posts()) :
                         while (have_posts()) :
                             the_post();

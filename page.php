@@ -45,6 +45,8 @@
         <?php 
         if (is_page(array('company'))):
             get_sidebar('post');
+        elseif (is_page(array('contact'))):
+            get_sidebar('contact');
         else:
             get_sidebar();
         endif;

@@ -32,28 +32,20 @@
                 </div>
                 <div class="service_detail_2">
                     <h3 class="service_content t_hide">サービス一覧</h3>
+
                     <div class="service_list">
                         <ul>
-                            <li class="s_arrow"><a href="">RoHS分析</a></li>
-                            <li class="s_arrow"><a href="">REACH分析</a></li>
-                            <li class="s_arrow"><a href="">PFOS+PFOA分析</a></li>
-                            <li class="s_arrow"><a href="">JIG24物質分析</a></li>
-                        </ul>
-                    </div>
-                    <div class="service_list">
-                        <ul>
-                            <li class="s_arrow"><a href="">フタル酸エステル類分析</a></li>
-                            <li class="s_arrow"><a href="">PCB分析</a></li>
-                            <li class="s_arrow"><a href="">玩具EN71-Part3分析</a></li>
-                            <li class="s_arrow"><a href="">ハロゲン分析</a></li>
-                        </ul>
-                    </div>
-                    <div class="service_list">
-                        <ul>
-                            <li class="s_arrow"><a href="">多環芳香属炭化水素分析</a></li>
-                            <li class="s_arrow"><a href="">有機スズ化合物分析</a></li>
-                            <li class="s_arrow"><a href="">VOC放散量分析</a></li>
-                            <li class="s_arrow"><a href="">重金属含有量</a></li>
+                            <?php
+                                $args = array('cat'=> '9', 'order'=> 'ASC');
+                                $postslist = get_posts( $args );
+                                foreach ($postslist as $post) :
+                                    setup_postdata($post);
+                                ?>
+                                <li class="s_arrow"><a href="<?php the_permalink(); ?>" alt="<?php the_title(); ?>"><?php the_title(); ?></a></li>
+                                <?php
+                                endforeach;
+                                wp_reset_postdata();
+                            ?>
                         </ul>
                     </div>
                 </div>
@@ -63,7 +55,7 @@
             <?php get_template_part('page_get_contact');?>
         </div>
         <!--main_column-->
-    <?php get_sidebar('post'); ?>
+    <?php get_sidebar('product'); ?>
     </div>
     <!-- main -->
 </div>

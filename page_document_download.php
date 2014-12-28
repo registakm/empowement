@@ -14,7 +14,7 @@
             <p class="f_arrow heading">見積り依頼書・分析注文書</p>
             <ul class="list">
                 <li class="f_arrow"><a href="">見積り依頼書・分析注文書(PDF版)</a></li>
-                <li class="f_arrow"><a href="">見積り依頼書・分析注文書(Excell版)</a></li>
+                <li class="f_arrow"><a href="">見積り依頼書・分析注文書(Excel版)</a></li>
             </ul>
         </section>
     </div>
@@ -23,7 +23,7 @@
             <p class="f_arrow heading">PCB分析依頼書</p>
             <ul class="list">
                 <li class="f_arrow"><a href="">見積り依頼書・分析注文書(PDF版)</a></li>
-                <li class="f_arrow"><a href="">見積り依頼書・分析注文書(PDF版)</a></li>
+                <li class="f_arrow"><a href="">見積り依頼書・分析注文書(Excel版)</a></li>
             </ul>
         </section>
     </div>

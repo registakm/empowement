@@ -6,9 +6,9 @@
 </section>
 <section class="side_banner">
     <div class="side_banner_inner">
-        <p class="t_hide question"><a href="">よくある質問</a></p>
+        <p class="t_hide question"><a href="<?php echo get_permalink(get_page_by_path('contact/question')); ?>">よくある質問</a></p>
     </div>
     <div class="side_banner_inner">
-        <p class="t_hide news"><a href="">更新情報はこちら</a></p>
+        <p class="t_hide news"><a href="<?php echo get_permalink(get_page_by_path('company/news')); ?>">更新情報はこちら</a></p>
     </div>
 </section>
