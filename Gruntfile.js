@@ -12,18 +12,18 @@ module.exports = function (grunt) {
         files: ['<%= path.sass %>/{,*/}*.{scss,sass}'],
         tasks: ['compass', 'autoprefixer', 'concat:scssset', "csscomb", "csso",]
       },
-      livereload: {
-        options: {
-          livereload: true
-        },
-        files: [
-          '{,*/}*.html',
-          '{,*/}*.php',
-          'style.css',
-          'images/{,*/}*.{png,jpg,jpeg,gif}',
-          'js/script.js'
-        ]
-      },
+      // livereload: {
+      //   options: {
+      //     livereload: true
+      //   },
+      //   files: [
+      //     '{,*/}*.html',
+      //     '{,*/}*.php',
+      //     'style.css',
+      //     'images/{,*/}*.{png,jpg,jpeg,gif}',
+      //     'js/script.js'
+      //   ]
+      // },
       gruntfile: {
         files: ['Gruntfile.js']
       }
@@ -44,14 +44,14 @@ module.exports = function (grunt) {
       options: {
         port: 9000,
         // hostname: 'localhost',
-        livereload: 35729
+        // livereload: 35729
       },
-      livereload: {
-        options: {
-          open: true,
-          base: ['*']
-        }
-      }
+      // livereload: {
+      //   options: {
+      //     open: true,
+      //     base: ['*']
+      //   }
+      // }
     },
 
     concurrent: {
